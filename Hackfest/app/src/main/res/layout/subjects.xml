@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#95A5A6">
+
+    <Button
+        android:layout_width="320dip"
+        android:layout_height="wrap_content"
+        android:text="Mathematics"
+        android:id="@+id/buttonMAT"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dip"
+        android:background="#ECF0F1" />
+
+    <Button
+        android:layout_width="320dip"
+        android:layout_height="wrap_content"
+        android:text="Physics"
+        android:id="@+id/buttonPHY"
+        android:layout_below="@+id/buttonMAT"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dip"
+        android:background="#ECF0F1" />
+
+    <Button
+        android:layout_width="320dip"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonMECH"
+        android:layout_below="@+id/buttonPHY"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dip"
+        android:text="Mechanical Engineering"
+        android:background="#ECF0F1" />
+
+    <Button
+        android:layout_width="320dip"
+        android:layout_height="wrap_content"
+        android:text="Civil Engineering"
+        android:id="@+id/buttonCIV"
+        android:layout_below="@+id/buttonMECH"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dip"
+        android:background="#ECF0F1" />
+
+</RelativeLayout>

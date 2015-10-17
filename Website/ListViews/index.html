@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Fade and Blur on Hover Data Table</title>
+    
+    
+    <link rel="stylesheet" href="css/reset.css">
+
+    
+        <style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      body {
+	background: #fafafa url(http://jackrugile.com/images/misc/noise-diagonal.png);
+	color: #444;
+	font: 100%/30px 'Helvetica Neue', helvetica, arial, sans-serif;
+	text-shadow: 0 1px 0 #fff;
+}
+
+strong {
+	font-weight: bold; 
+}
+
+em {
+	font-style: italic; 
+}
+
+table {
+	background: #f5f5f5;
+	border-collapse: separate;
+	box-shadow: inset 0 1px 0 #fff;
+	font-size: 12px;
+	line-height: 24px;
+	margin: 30px auto;
+	text-align: left;
+	width: 800px;
+}	
+
+th {
+	background: url(http://jackrugile.com/images/misc/noise-diagonal.png), linear-gradient(#777, #444);
+	border-left: 1px solid #555;
+	border-right: 1px solid #777;
+	border-top: 1px solid #555;
+	border-bottom: 1px solid #333;
+	box-shadow: inset 0 1px 0 #999;
+	color: #fff;
+  font-weight: bold;
+	padding: 10px 15px;
+	position: relative;
+	text-shadow: 0 1px 0 #000;	
+}
+
+th:after {
+	background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,.08));
+	content: '';
+	display: block;
+	height: 25%;
+	left: 0;
+	margin: 1px 0 0 0;
+	position: absolute;
+	top: 25%;
+	width: 100%;
+}
+
+th:first-child {
+	border-left: 1px solid #777;	
+	box-shadow: inset 1px 1px 0 #999;
+}
+
+th:last-child {
+	box-shadow: inset -1px 1px 0 #999;
+}
+
+td {
+	border-right: 1px solid #fff;
+	border-left: 1px solid #e8e8e8;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #e8e8e8;
+	padding: 10px 15px;
+	position: relative;
+	transition: all 300ms;
+}
+
+td:first-child {
+	box-shadow: inset 1px 0 0 #fff;
+}	
+
+td:last-child {
+	border-right: 1px solid #e8e8e8;
+	box-shadow: inset -1px 0 0 #fff;
+}	
+
+tr {
+	background: url(http://jackrugile.com/images/misc/noise-diagonal.png);	
+}
+
+tr:nth-child(odd) td {
+	background: #f1f1f1 url(http://jackrugile.com/images/misc/noise-diagonal.png);	
+}
+
+tr:last-of-type td {
+	box-shadow: inset 0 -1px 0 #fff; 
+}
+
+tr:last-of-type td:first-child {
+	box-shadow: inset 1px -1px 0 #fff;
+}	
+
+tr:last-of-type td:last-child {
+	box-shadow: inset -1px -1px 0 #fff;
+}	
+
+tbody:hover td {
+	color: transparent;
+	text-shadow: 0 0 3px #aaa;
+}
+
+tbody:hover tr:hover td {
+	color: #444;
+	text-shadow: 0 1px 0 #fff;
+}
+    </style>
+
+    
+        <script src="js/prefixfree.min.js"></script>
+
+    
+  </head>
+
+  <body>
+
+    <table>
+
+
+  <thead>
+<h1>Download Forum</h1>
+    <tr>
+      <th>Department</th>
+      <th>File size</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+
+
+  <tbody>
+    <tr>
+      <td><strong>
+       <a href="switch.html">Information Science</a> 
+      
+
+      </strong></td>
+      <td>233kb</td>
+      <td>The Department od Bla Bla and Bla</td>
+    </tr>
+
+<tr>
+      <td><strong>Departmant 2 </strong></td>
+      <td>240kb</td>
+      <td>The Department od Bla Bla and Bla</td>
+    </tr>
+
+  
+    <tr>
+      <td><strong>Departmant 3 </strong></td>
+      <td>240kb</td>
+      <td>The Department od Bla Bla and Bla</td>
+    </tr>
+
+
+     <tr>
+      <td><strong>Departmant 4 </strong></td>
+      <td>240kb</td>
+      <td>The Department od Bla Bla and Bla</td>
+    </tr>
+    
+
+     <tr>
+      <td><strong>Departmant 5</strong></td>
+      <td>240kb</td>
+      <td>The Department od Bla Bla and Bla</td>
+    </tr>
+
+
+     <tr>
+      <td><strong>Departmant 6</strong></td>
+      <td>240kb</td>
+      <td>The Department od Bla Bla and Bla</td>
+    </tr>
+
+     <tr>
+      <td><strong>Departmant 7</strong></td>
+      <td>240kb</td>
+      <td>The Department od Bla Bla and Bla</td>
+    </tr>
+
+  <thead>
+
+
+  <br>
+  <br>
+<h1>Upload Forum</h1>
+    <tr>
+      <th>Department</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr>
+      <td><strong>
+       <a href="form1.html">Information Science</a></strong></td>
+    </tr>
+     <tr>
+      <td><strong>
+       <a href="#">Department 2</a></strong></td>
+    </tr>
+     <tr>
+      <td><strong>
+       <a href="#">Department 3</a></strong></td>
+    </tr>
+     
+  
+  </tbody>
+</table>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>

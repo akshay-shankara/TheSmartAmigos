@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#95A5A6">
+
+    <Button
+        android:layout_width="320dip"
+        android:layout_height="wrap_content"
+        android:text="@string/Semester1"
+        android:id="@+id/buttonSem1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dip"
+        android:clickable="true" />
+
+    <Button
+        android:layout_width="320dip"
+        android:layout_height="wrap_content"
+        android:text="@string/semester2"
+        android:id="@+id/buttonSem2"
+        android:layout_below="@+id/buttonSem1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dip" />
+
+    <Button
+        android:layout_width="320dip"
+        android:layout_height="wrap_content"
+        android:text="@string/ec"
+        android:id="@+id/buttonEC"
+        android:layout_below="@+id/buttonSem2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dip" />
+
+    <Button
+        android:layout_width="320dip"
+        android:layout_height="wrap_content"
+        android:text="@string/cs"
+        android:id="@+id/buttonCS"
+        android:layout_below="@+id/buttonEC"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dip" />
+
+    <Button
+        android:layout_width="320dip"
+        android:layout_height="wrap_content"
+        android:text="@string/is"
+        android:id="@+id/buttonIS"
+        android:layout_below="@+id/buttonCS"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dip" />
+
+    <Button
+        android:layout_width="320dip"
+        android:layout_height="wrap_content"
+        android:text="@string/civ"
+        android:id="@+id/buttonCIV"
+        android:layout_below="@+id/buttonIS"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dip" />
+
+</RelativeLayout>
