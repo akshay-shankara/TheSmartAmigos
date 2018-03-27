@@ -15,5 +15,5 @@
 *.PDF	 diff=astextplain
 *.rtf	 diff=astextplain
 *.RTF	 diff=astextplain
-static/* linguist-vendored
-./Websites/* linguist-vendored
+* linguist-vendored
+*.java linguist-vendored=false
